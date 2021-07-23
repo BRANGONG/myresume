@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Brangong Sisen Singpho} & Email : \href{mailto:bsingpho@gmail.com}{bsingpho@gmail.com}\\
+    \href{https://www.linkedin.com/in/brangong-sisen-singpho-8a6271177/}{\faLinkedinSquare  \hspace{0.20cm} Linkedin} \hspace{4cm} 
+    \href{https://github.com/BRANGONG}{\faGithub  \hspace{0.20cm} Github}
+   & Mobile : +91-8787736476 \\
+   
+   
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology, Silchar}{Assam, India}
+      {Bachelor of Technology in Computer Science;  CGPA: 6.52}{May. 2018 -- Current}
+    \resumeSubheading
+      {Vivekananda Kendra Vidyalaya, Dibrugarh}{Assam, India}
+      {Higher Secondary School;  CGPA: 8.23 (78.2/100)}{May. 2015 -- April. 2017}
+    \resumeSubheading
+      {Zenith Child School, Namsai}{Arunachal Pradesh, India}
+      {Secondary School;  CGPA: 8.00}{March. 2011 -- April. 2015}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \resumeItem{Languages}{C, C++, Javascript}
+   \resumeItem{IT Constructs}{DS and Algorithms, OOPS, OS and DBMS}
+   \resumeItem{Development tools}{Microsoft Visual Studio, Sublime Text}
+   \resumeItem{DB language}{SQL}
+ \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Satyendra Nath Bose Summer Internship}{NIT Silchar}
+      {Reseach Internship}{June 2021 - Current}
+      \resumeItemListStart
+        \item
+          {Gained knowledge of how quantum circuits work and wrote a review paper on \textbf{Linear Optical Quantum circuits}.}
+        \item
+          {Performed simulation of grover search algorithm in an optical quantum simulator.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Lets Chat App}
+      {}
+      \null\hfill \href{https://github.com/BRANGONG/letschat}{\textbf{\faCode \hspace{0.05cm} SOURCE CODE}}
+    %   \hspace{10cm}{}}
+      \resumeItemListStart
+        \item{Developed a private chat web-application with the backend on \textbf{Node.js} and \textbf{Express.js}.}
+        \item{Implemented using \textbf{socket.io} for real time updates.}
+        \item{
+        \href{https://chatapp-brang.herokuapp.com}{Deployed on the web with \textbf{heroku}. \faExternalLink}
+        }
+        
+      \resumeItemListEnd
+    \resumeSubItem{SortVisualiser}
+      {}
+         \null\hfill \href{https://github.com/BRANGONG/SortingVisualiser}{\textbf{\faCode \hspace{0.05cm} SOURCE CODE}}
+        \resumeItemListStart
+        \item{}{
+        Developed a web application using \textbf{Javascript}, \textbf{CSS} and \textbf{HTML} for visualization of sorting algorithms .
+        }
+        \item{}
+            {The application allows the user to select sorting algorithm, speed of the visualization and size of the input array.}
+        \item
+        \href{https://eloquent-booth-ef2e33.netlify.app/}{Deployed on the web with \textbf{netlify}. \faExternalLink}
+        \resumeItemListEnd
+    \resumeSubItem{Password Manager}{}
+      \null\hfill \href{https://github.com/BRANGONG/Password-Manager}{\textbf{\faCode \hspace{0.05cm} SOURCE CODE}}
+      \resumeItemListStart
+        \item {
+        Developed an app to manage passwords securely and easily with \textbf{python}}
+        \item {
+        All the passwords are stored in a \textbf{SQLITE} database and are \textbf{hashed} for secure transactions.}
+        \item{
+        Created an executable file for ease of access.
+        }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+
+%--------ACHIEVEMENTS------------
+\section{Accomplishments}
+    \resumeItemListStart
+        \item{
+        \href{https://auth.geeksforgeeks.org/user/bsingpho/practice/}{\textbf{Solved more than 500 questions in GFG/leetcode}}
+        }
+    \resumeItemListEnd
+%-------------------------------------------
+
+
+\end{document}
